@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>L & E Hydroseeding | Conroe Hydroseeding</title>
+    <meta
+      name="description"
+      content="Veteran-owned hydroseeding in Conroe, Texas. Residential and commercial hydroseeding, erosion control, and new construction lawns. Call or text 936-297-GROW."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="wrap header">
+      <div class="brand">
+        <div class="logo">L&amp;E</div>
+        <div>
+          <div class="name">L &amp; E Hydroseeding</div>
+          <div class="tag">Veteran-owned | Conroe, Texas</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#photos">Photos</a>
+        <a class="btn small" href="#contact">Get a quote</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <h1>Hydroseeding in Conroe and Montgomery County</h1>
+            <p class="lead">
+              Thick, even grass for new builds, bare yards, and large lots. Fast scheduling, professional prep, and clean
+              coverage.
+            </p>
+            <div class="cta">
+              <a class="btn" href="tel:+19362974769">Call 936 297 GROW</a>
+              <a class="btn outline" href="#contact">Request a quote</a>
+            </div>
+            <p class="sub">Serving Conroe, Montgomery, Cleveland, Oak Ridge North, The Woodlands area</p>
+          </div>
+
+          <div class="card hero-card">
+            <div class="card-title">Quick quote</div>
+            <ul class="check">
+              <li>Text photos and approximate square footage</li>
+              <li>Tell us your grass type preference if you have one</li>
+              <li>We will reply with pricing and next available dates</li>
+            </ul>
+            <a class="btn full" href="#contact">Start here</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="wrap">
+          <h2>Services</h2>
+          <div class="grid3">
+            <div class="card">
+              <div class="card-title">Residential hydroseeding</div>
+              <p>New builds, resets, and bare yards. We focus on prep, even application, and watering guidance.</p>
+            </div>
+            <div class="card">
+              <div class="card-title">Large lots and acreage</div>
+              <p>Big areas done efficiently. Great for new construction and property improvements.</p>
+            </div>
+            <div class="card">
+              <div class="card-title">Erosion control</div>
+              <p>Seeding and stabilization for slopes, ditches, and disturbed soil where washouts are a problem.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section alt">
+        <div class="wrap">
+          <h2>About</h2>
+          <p>
+            L &amp; E Hydroseeding is a veteran-owned local business based in Conroe, Texas. We keep it simple
+            show up on time, prep the site right, apply an even mix, and give you clear watering instructions so the grass takes.
+          </p>
+          <div class="pill-row">
+            <span class="pill">Veteran-owned</span>
+            <span class="pill">Local to Conroe</span>
+            <span class="pill">Clear pricing</span>
+            <span class="pill">Fast scheduling</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="photos" class="section">
+        <div class="wrap">
+          <h2>Photos</h2>
+          <p class="muted">Add before and after photos later. For now these are placeholders.</p>
+          <div class="grid3">
+            <div class="photo ph">Before</div>
+            <div class="photo ph">Application</div>
+            <div class="photo ph">After</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section alt">
+        <div class="wrap contact">
+          <div>
+            <h2>Get a quote</h2>
+            <p class="muted">
+              Fastest way is to text photos plus an estimated square footage. If you do not know the size, send your
+              address and a quick description.
+            </p>
+            <div class="contact-cards">
+              <a class="card link" href="tel:+19362974769">
+                <div class="card-title">Call or text</div>
+                <div class="big">936 297 GROW</div>
+              </a>
+              <a class="card link" href="mailto:info@conroehydroseeding.com">
+                <div class="card-title">Email</div>
+                <div class="big">info@conroehydroseeding.com</div>
+              </a>
+            </div>
+            <p class="fine">If you have not set up email yet, we can do that later. The site can still go live today.</p>
+          </div>
+
+          <form class="card form" name="quote" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="quote" />
+            <label>
+              Name
+              <input name="name" required />
+            </label>
+            <label>
+              Phone
+              <input name="phone" required />
+            </label>
+            <label>
+              Address or city
+              <input name="location" />
+            </label>
+            <label>
+              Approx square footage
+              <input name="sqft" />
+            </label>
+            <label>
+              Notes
+              <textarea name="notes" rows="5" placeholder="New build, bare yard, erosion issue, timeline"></textarea>
+            </label>
+            <button class="btn full" type="submit">Send</button>
+            <p class="fine">This form will work automatically once deployed on Netlify.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap footer">
+      <div>© <span id="y"></span> L &amp; E Hydroseeding</div>
+      <div><a href="https://conroehydroseeding.com">conroehydroseeding.com</a> | <a href="tel:+19362974769">936 297 GROW</a></div>
+    </footer>
+
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
